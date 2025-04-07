@@ -1,0 +1,10 @@
+^D:\WORK\PERSONAL PROJECTS\STRUCTURE-FROM-MOTION\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Work/Personal Projects/Structure-From-Motion" "-BD:/Work/Personal Projects/Structure-From-Motion/build" --check-stamp-file "D:/Work/Personal Projects/Structure-From-Motion/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
