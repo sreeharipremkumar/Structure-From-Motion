@@ -303,7 +303,7 @@ int main()
         }
     }
     file.close();
-    std::cout << "Saved point cloud with " << points.size()-invalid_pts << std::endl;
+    std::cout << "Saved point cloud with " << points.size()-invalid_pts<<" removing: "<<invalid_pts<<" invalid pts" << std::endl;
     
 
 
